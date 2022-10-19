@@ -20,10 +20,14 @@ section{
     padding: 2rem 0;
 }
 
+[class^="jumbo"] .section_text{
+    padding-top: 200px;
+}
+
 .jumbo_1{
     background-image: url('../img/returnal-listing-thumb-01-ps5.jpg')
 }
 
-.jumbo_1 .section_text{
-    padding-top: 200px;
+.jumbo_2{
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
 }
