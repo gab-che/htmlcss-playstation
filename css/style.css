@@ -31,3 +31,7 @@ section{
 .jumbo_2{
     background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
 }
+
+.banner_1{
+    background-color: var(--color_banner1);
+}
