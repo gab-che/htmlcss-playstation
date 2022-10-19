@@ -39,3 +39,7 @@ section{
 .banner_2{
     background-color: var(--color_banner2);
 }
+
+.banner_3{
+    background-color: var(--color_banner3);
+}
