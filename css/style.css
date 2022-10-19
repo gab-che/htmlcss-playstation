@@ -43,3 +43,7 @@ section{
 .banner_3{
     background-color: var(--color_banner3);
 }
+
+footer{
+    background-color: var(--color_footer);
+}
