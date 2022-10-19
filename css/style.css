@@ -16,6 +16,10 @@
     background-color: var(--color_primary);
 }
 
+section{
+    padding: 2rem 0;
+}
+
 .jumbo_1{
     background-image: url('../img/returnal-listing-thumb-01-ps5.jpg')
 }
