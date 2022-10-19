@@ -13,29 +13,36 @@
 <body>
     <header>
         <!-- Parte nera logo sony a dx-->
-        <div class="nav_black py-3">
+        <div class="nav_black py-1">
             <div class="container-fluid">
                 <!-- logo sony-->
-                <div class="img_container"></div>
+                <div class="img_container">
+                    <img src="img/sony_logo.svg" alt="logo sony" class="img-fluid">
+                </div>
             </div>
         </div>
 
         <!-- Parte bianca sticky con menu -->
         <nav class="py-3 bg-success">
-            <div class="container-fluid d-flex justify-content-between">
+            <div class="container-fluid d-flex">
                 <!-- logo play -->
+                <div class="img_container">
+                    <img src="" alt="logo play">
+                </div>
 
-                <!-- menu flex justifycontent solo in lg-->
-                <div class="menu_container d-flex">
+                <!-- menu flex justifycontent -->
+                <div class="menu_container d-flex d-none d-lg-flex flex-grow-1">
                     <!-- menu sx - giochi:supporto -->
                     <div class="menu_left border border-white">menu sx</div>
 
                     <!-- menu dx myplay|accedi|search-->
                     <div class="menu_right border border-white">menu dx</div>
+
                 </div>
 
                 <!-- hamburger menu -->
-                <div class="hamburger_menu border border-white">ham</div>
+                <div class="hamburger_menu border border-white d-lg-none">ham</div>
+
             </div>
         </nav>
     </header>

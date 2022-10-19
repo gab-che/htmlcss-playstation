@@ -16,6 +16,16 @@
     background-color: var(--color_primary);
 }
 
+.nav_black .img_container{
+    max-width: 40px;
+}
+
+.nav_black .img_container,
+.hamburger_menu,
+.menu_right{
+    margin-left: auto;
+}
+
 section{
     padding: 2rem 0;
 }
