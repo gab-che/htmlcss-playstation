@@ -30,6 +30,16 @@
     background-color: var(--color_accent_cool);
 }
 
+.btn_transp{
+    color: var(--color_primary);
+    background-color: rgba(255, 255, 255, 0.846);
+}
+
+.btn_transp_accent{
+    color: var(--color_accent_cool);
+    background-color: rgba(255, 255, 255, 0.427);
+}
+
 /* Formattazione testo */
 .text_accent{
     color: var(--color_accent_cool);
@@ -104,11 +114,7 @@ section{
 
 .card .card-body{
     padding: 0;
-}
-
-.card-img .img-fluid,
-.card-img-top{
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .card-img .img-fluid{
