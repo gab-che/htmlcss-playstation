@@ -68,17 +68,17 @@ section{
     background-position: center;
 }
 
-[class^="jumbo"] .section_text{
-    padding-top: 300px;
+[class^="jumbo"] .img_container{
+    max-width: 50%;
+    padding-bottom: 2rem;
 }
 
 .jumbo_1{
     background-image: url('../img/jumbo-bg.png');
 }
 
-.jumbo_1 .img_container{
-    max-width: 50%;
-    padding-bottom: 2rem;
+.jumbo_1 .section_text{
+    padding-top: 300px;
 }
 
 .jumbo_2{
