@@ -129,4 +129,16 @@ section{
 /* Footer */
 footer{
     background-color: var(--color_footer);
+    padding: 3rem 0;
+}
+
+.img_container_icon{
+    width: 20px;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.img_container_logo{
+    width: 150px;
+    margin-bottom: 2rem;
 }
