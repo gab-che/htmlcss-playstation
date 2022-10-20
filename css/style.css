@@ -73,14 +73,14 @@ section{
     padding: 2rem 0;
 }
 
+.img_container_fluid{
+    max-width: 50%;
+    padding-bottom: 2rem;
+}
+
 [class^="jumbo"]{
     background-size: cover;
     background-position: center;
-}
-
-[class^="jumbo"] .img_container{
-    max-width: 50%;
-    padding-bottom: 2rem;
 }
 
 .jumbo_1{
