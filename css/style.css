@@ -99,18 +99,25 @@ section{
 
 .card{
     border: none;
-}
-
-.card img{
-    max-width: 80%;
-    margin: auto;
-    padding-bottom: 1rem;
+    background-color: transparent;
 }
 
 .card .card-body{
     padding: 0;
-    text-align: center;
-    color: var(--color_secondary_light);
+}
+
+.card-img .img-fluid,
+.card-img-top{
+    margin-bottom: 1rem;
+}
+
+.card-img .img-fluid{
+    border-radius: 20px;
+}
+
+.card-img-top{
+    max-width: 80%;
+    margin: auto;
 }
 
 /* Footer */
