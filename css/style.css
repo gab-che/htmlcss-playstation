@@ -12,24 +12,7 @@
     --color_footer: #00439c;
 }
 
-.nav_black{
-    background-color: var(--color_primary);
-}
-
-.nav_black .img_container{
-    max-width: 40px;
-}
-
-.nav_black .img_container,
-.hamburger_menu,
-.menu_right{
-    margin-left: auto;
-}
-
-.menu_right button img{
-    width: 20px;
-}
-
+/* Bottoni */
 [class*="btn_"]{
     color: var(--color_white);
     border-radius: 20px;
@@ -47,12 +30,42 @@
     background-color: var(--color_accent_cool);
 }
 
+/* Formattazione testo */
+.text_accent{
+    color: var(--color_accent_cool);
+}
+
+.text_secondary{
+    color: var(--color_secondary_light);
+}
+
+/* Proprietà header */
+.nav_black{
+    background-color: var(--color_primary);
+}
+
+.nav_black .img_container{
+    max-width: 50px;
+}
+
+.nav_black .img_container,
+.hamburger_menu,
+.menu_right{
+    margin-left: auto;
+}
+
+.menu_right button img{
+    width: 20px;
+}
+
+/* Proprietà main */
 section{
     padding: 2rem 0;
 }
 
 [class^="jumbo"]{
     background-size: cover;
+    background-position: center;
 }
 
 [class^="jumbo"] .section_text{
@@ -60,7 +73,7 @@ section{
 }
 
 .jumbo_1{
-    background-image: url('../img/returnal-listing-thumb-01-ps5.jpg');
+    background-image: url('../img/jumbo-bg.png');
 }
 
 .jumbo_1 .img_container{
@@ -84,6 +97,23 @@ section{
     background-color: var(--color_banner3);
 }
 
+.card{
+    border: none;
+}
+
+.card img{
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.card .card-body{
+    padding: 0;
+    text-align: center;
+    color: var(--color_secondary_light);
+}
+
+/* Footer */
 footer{
     background-color: var(--color_footer);
 }
