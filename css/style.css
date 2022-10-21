@@ -41,12 +41,16 @@
 }
 
 /* Formattazione testo */
-h2, p{
+h2, h3, h4, p{
     font-weight: 600;
 }
 
 h2{
     padding-bottom: 2rem;
+}
+
+h3{
+    padding-bottom: 1rem;
 }
 
 p{
