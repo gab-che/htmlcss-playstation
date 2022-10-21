@@ -154,8 +154,43 @@ section{
     padding: 2rem 0;
 }
 
+#rounded_cards .img-fluid{
+    border-radius: 20px;
+    transition: all .15s ease-in-out;
+}
+
+#rounded_cards .img-fluid:hover{
+    outline: 2px solid var(--color_accent_cool);
+    outline-offset: 2px;
+}
+
 #play5_products .card p{
     display: none;
+}
+
+#play5_products .col{
+    position: relative;
+}
+
+#play5_products .col::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    transition: all .15s ease-in-out;
+}
+
+#play5_products .col:hover::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100px;
+    transform-origin: center;
+    transform: translateX(-50%);
+    background-color: var(--color_accent_cool);
 }
 
 .img_container_fluid{
@@ -202,9 +237,7 @@ section{
     margin-top: 1rem;
 }
 
-.card-img .img-fluid{
-    border-radius: 20px;
-}
+
 
 .card-img-top{
     max-width: 80%;
