@@ -16,18 +16,42 @@
 [class*="btn_"]{
     color: var(--color_white);
     border-radius: 20px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: all .2s ease-in-out;
+}
+
+[class*="btn_"]:hover{
+    outline-offset: 2px;
 }
 
 .btn_secondary_dark{
     background-color: var(--color_secondary_dark);
 }
 
+.btn_secondary_dark:hover{
+    background-color:#292626;
+    color: var(--color_white);
+    outline: 2px solid var(--color_secondary_dark);
+}
+
 .btn_accent_warm{
     background-color: var(--color_accent_warm);
 }
 
+.btn_accent_warm:hover{
+    background-color: #932a07;
+    outline: 2px solid var(--color_accent_warm);
+}
+
 .btn_accent_cool{
     background-color: var(--color_accent_cool);
+}
+
+.btn_accent_cool:hover{
+    background-color:#1048c9;
+    color: var(--color_white);
+    outline: 2px solid var(--color_accent_cool);
 }
 
 .btn_transp{
@@ -35,9 +59,20 @@
     background-color: rgba(255, 255, 255, 0.846);
 }
 
+.btn_transp:hover{
+    background-color: rgba(255, 255, 255, 0.94);
+    outline: 2px solid var(--color_white);
+    color: var(--color_accent_warm);
+}
+
 .btn_transp_accent{
     color: var(--color_accent_cool);
     background-color: rgba(255, 255, 255, 0.427);
+}
+
+.btn_transp_accent:hover{
+    background-color: rgba(255, 255, 255, 0.689);
+    outline: 2px solid var(--color_white);
 }
 
 /* Formattazione testo */
@@ -85,6 +120,14 @@ p{
 
 .menu_container a::after{
     content: url('../img/chevron-down-solid.svg');
+    display: inline-block;
+    width: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.menu_container a:hover::after{
+    content: url('../img/chevron-down-solid-hover.svg');
     display: inline-block;
     width: 12px;
     margin-left: 5px;
