@@ -41,6 +41,19 @@
 }
 
 /* Formattazione testo */
+h2, p{
+    font-weight: 600;
+}
+
+h2{
+    padding-bottom: 2rem;
+}
+
+p{
+    padding-bottom: 1rem;
+    font-size: larger;
+}
+
 .text_accent{
     color: var(--color_accent_cool);
 }
@@ -50,8 +63,8 @@
 }
 
 /* Proprietà header */
-.container-fluid{
-    --bs-gutter-x: .5rem;
+.nav{
+    --bs-nav-link-padding-x: .5rem;
 }
 
 .nav_black{
@@ -84,9 +97,18 @@
     width: 20px;
 }
 
+.hamburger_menu svg{
+    width: 20px;
+    fill: var(--color_secondary_dark)
+}
+
 /* Proprietà main */
 section{
     padding: 2rem 0;
+}
+
+#play5_products .card p{
+    display: none;
 }
 
 .img_container_fluid{
