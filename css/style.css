@@ -50,12 +50,28 @@
 }
 
 /* Proprietà header */
+.container-fluid{
+    --bs-gutter-x: .5rem;
+}
+
 .nav_black{
     background-color: var(--color_primary);
 }
 
 .nav_black .img_container{
-    max-width: 50px;
+    max-width: 60px;
+}
+
+.menu_container a{
+    color: var(--color_primary);
+}
+
+.menu_container a::after{
+    content: url('../img/chevron-down-solid.svg');
+    display: inline-block;
+    width: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 
 .nav_black .img_container,
@@ -130,6 +146,11 @@ section{
 footer{
     background-color: var(--color_footer);
     padding: 3rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--color_white);
 }
 
 .img_container_icon{
