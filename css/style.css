@@ -102,6 +102,12 @@ p{
 }
 
 /* Proprietà header */
+header{
+    position: sticky;
+    top: -32px;
+    z-index: 999;
+}
+
 .nav{
     --bs-nav-link-padding-x: .5rem;
 }
