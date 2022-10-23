@@ -172,6 +172,10 @@ section{
     height: 100%;
 }
 
+#play5_products .card:hover{
+    color: var(--color_secondary_dark);
+}
+
 #play5_products .card::after{
     content: '';
     display: block;
