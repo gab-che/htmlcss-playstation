@@ -114,26 +114,6 @@ p{
     max-width: 60px;
 }
 
-.menu_container a{
-    color: var(--color_primary);
-}
-
-.menu_container a::after{
-    content: url('../img/chevron-down-solid.svg');
-    display: inline-block;
-    width: 12px;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-
-.menu_container a:hover::after{
-    content: url('../img/chevron-down-solid-hover.svg');
-    display: inline-block;
-    width: 12px;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-
 .nav_black .img_container,
 .hamburger_menu,
 .menu_right{
@@ -147,6 +127,20 @@ p{
 .hamburger_menu svg{
     width: 20px;
     fill: var(--color_secondary_dark)
+}
+
+.hamburger_menu:focus + .menu_container{
+    display: flex !important;
+    flex-direction: column;
+    background-color: var(--color_white);
+    position: absolute;
+    right: 0;
+    top: 90px;
+    text-align: center;
+}
+
+.hamburger_menu:focus + .menu_container .nav{
+    flex-direction: column;
 }
 
 /* Proprietà main */
