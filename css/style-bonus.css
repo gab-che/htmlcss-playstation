@@ -1,0 +1,80 @@
+#play5_products label:hover{
+    color: var(--color_secondary_dark);
+}
+
+#play5_products label::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--color_accent_cool);
+    transform: scaleX(0);
+    transition: all .2s linear;
+}
+
+#play5_products label:hover::after{
+    transform: scaleX(1);
+}
+
+#play5_products .container{
+    position: relative;
+}
+
+#play5_products .col .row{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#play5_products input{
+    display: none;
+}
+
+#play5_products label{
+    height: 100%;
+    transform: translateY(700px);
+}
+
+#play5_products label:hover{
+    cursor: pointer;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5{
+    display: flex;
+}
+
+.jumbo_2{
+    margin-top: 700px;
+}
+
+/* media queries */
+@media screen and (min-width: 576px) {
+    #play5_products label{
+        transform: translateY(750px);
+    }
+
+    .jumbo_2{
+        margin-top: 750px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #play5_products label{
+        height: 100%;
+        padding-top: 400px;
+        transform: translateY(0);
+    }
+
+    .jumbo_2{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #play5_products label{
+        padding-top: 570px;
+    }
+}
