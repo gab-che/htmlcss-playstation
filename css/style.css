@@ -168,29 +168,20 @@ section{
     display: none;
 }
 
-#play5_products .col{
-    position: relative;
+#play5_products .card{
+    height: 100%;
 }
 
-#play5_products .col::after{
+#play5_products .card::after{
     content: '';
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    transition: all .15s ease-in-out;
+    display: block;
+    border-bottom: 2px solid var(--color_accent_cool);
+    transform: scaleX(0);
+    transition: all .2s linear;
 }
 
-#play5_products .col:hover::after{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 100px;
-    transform-origin: center;
-    transform: translateX(-50%);
-    background-color: var(--color_accent_cool);
+#play5_products .card:hover::after{
+    transform: scaleX(1);
 }
 
 .img_container_fluid{
